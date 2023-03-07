@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Lounaslaskuri</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<style>
+    html {
+        min-width: 100%;
+        font-size: 5vw;
+        padding: 0px;
+    }
+</style>
+
+<body>
+    <h1 style="margin-top: 10px;">Tulokset:</h1>
+    <p th:text="'Lounaan kokonaishinta: ' + ${lounaslaskuri.start}" />
+    <p th:text="'Lounasedun määrä: ' + ${lounaslaskuri.value}" />
+    <p th:text="'Omaa rahaa menee: ' + ${lounaslaskuri.remain}" />
+    <a href="/lounaslaskuri">Laske uudella hinnalla</a>
+</body>
+
+</html>
